@@ -54,11 +54,16 @@ function showFavorites(favorites) {
 // Add Transactions
 
 // Add function to add transaction
+function addTransaction(date, amount, transactionObject) {
 
-// Create object to hold transactions
+		transactionObject[date] = amount;
 
+}
+
+const transactions = {}
 // Add transactions to object
-
+//addTransaction('feb14', -25, transactions);
+console.log(transactions);
 
 /////////////////////////////////////////////////////////
 // Get Balance Status
