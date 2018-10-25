@@ -70,13 +70,23 @@ console.log(transactions);
 
 // Add function to calculate balance status
 
-
+function getBalanceStatus(balance){
+	if (balance < 0) {
+	  return 'You are overdrawn';
+  } else if (balance < 20) {
+  	  return 'Warning Your balance is almost 0';
+  } else {
+  	  return 'normal'; 
+  } 
+}
 
 /////////////////////////////////////////////////////////
 // Calculate Current Balance
 
 // Add function to calculate and return current balance
-
+function getCurrentBalance(balance, transactions){
+	balance += transactions[amount]
+}
 
 /////////////////////////////////////////////////////////
 // Show Account Activity
